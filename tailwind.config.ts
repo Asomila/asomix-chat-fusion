@@ -19,13 +19,32 @@ export default {
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
+        
+        // Chat specific colors
+        "chat-background": "hsl(var(--chat-background))",
+        "chat-header": "hsl(var(--chat-header))",
+        
+        // Message colors
+        "user-message": {
+          DEFAULT: "hsl(var(--user-message))",
+          bg: "hsl(var(--user-message-bg))",
+          text: "hsl(var(--user-message-text))",
+        },
+        "bot-message": {
+          DEFAULT: "hsl(var(--bot-message))",
+          bg: "hsl(var(--bot-message-bg))",
+          text: "hsl(var(--bot-message-text))",
+        },
+        
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
+          hover: "hsl(var(--primary-hover))",
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
           foreground: "hsl(var(--secondary-foreground))",
+          hover: "hsl(var(--secondary-hover))",
         },
         destructive: {
           DEFAULT: "hsl(var(--destructive))",
@@ -47,16 +66,34 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        sidebar: {
-          DEFAULT: "hsl(var(--sidebar-background))",
-          foreground: "hsl(var(--sidebar-foreground))",
-          primary: "hsl(var(--sidebar-primary))",
-          "primary-foreground": "hsl(var(--sidebar-primary-foreground))",
-          accent: "hsl(var(--sidebar-accent))",
-          "accent-foreground": "hsl(var(--sidebar-accent-foreground))",
-          border: "hsl(var(--sidebar-border))",
-          ring: "hsl(var(--sidebar-ring))",
+        
+        // Glass morphism
+        glass: {
+          bg: "hsl(var(--glass-bg))",
+          border: "hsl(var(--glass-border))",
         },
+        
+        // Admin colors
+        admin: {
+          success: "hsl(var(--admin-success))",
+          warning: "hsl(var(--admin-warning))",
+          error: "hsl(var(--admin-error))",
+          info: "hsl(var(--admin-info))",
+        },
+      },
+      backgroundImage: {
+        "gradient-primary": "var(--gradient-primary)",
+        "gradient-secondary": "var(--gradient-secondary)",
+        "gradient-background": "var(--gradient-background)",
+      },
+      boxShadow: {
+        soft: "var(--shadow-soft)",
+        medium: "var(--shadow-medium)",
+        strong: "var(--shadow-strong)",
+      },
+      transitionProperty: {
+        smooth: "var(--transition-smooth)",
+        quick: "var(--transition-quick)",
       },
       borderRadius: {
         lg: "var(--radius)",
